@@ -1,2 +1,2 @@
 # progetto_ecommerce
-esame web design 2
+descrizione di quello che sarà il sito
