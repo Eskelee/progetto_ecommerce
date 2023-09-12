@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Trova il prodotto di cartoleria più adatto a te!"/>
+        
+        <!-- Fonts/CSS/Bootstrap -->
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">        
+        <link href="/css/prodotti.css" rel="stylesheet"/>
+      
+        <!---Titolo della pagina-->
+        <title>La Matiteria &#183; Scheda Prodotto</title>
+        
+        <!--- JavaScript -->
+        <script src="/js/scriptprodotti.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container1">
+          <nav>
+            <a href="/index.html"><img src="/img/logo.png" alt="Logo" class="logo"></a>
+            <div class="nav-icons">
+                <div class="menutenda">
+                    <button class="dropbtn"><img src="/img/nav/search.svg" alt="Cerca"></button>
+                    <div class="dropdown-content">
+                        <div><input type="text" placeholder="Cerca"></div>
+                    </div>
+                </div>
+                <div class="menutenda">
+                  <a href="/carrello.html"><img src="/img/nav/cart.svg" alt="Carrello"></a>
+                </div>
+                <div class="menutenda">
+                    <button class="dropbtn"><img src="/img/nav/menu.svg" alt="Menu"></button>
+                    <div class="dropdown-content">
+                        <div><a href="/index.html">Home</a></div>
+                        <div><a href="/catalogo.html">Catalogo</a></div>
+                        <div><a href="/contatti.html">Contatti</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="space1"></div>
+
+        <main class="container">
+ 
+            <!-- Colonna Foto -->
+            <div class="left-column">
+              <img data-image="black" src="/img/prodotti/7.png" alt="">
+              <img data-image="blue" src="/img/prodotti/7.png" alt="">
+              <img data-image="red" class="active" src="/img/prodotti/7.png" alt="">
+            </div>
+           
+           
+            <!-- Colonna Descrizione -->
+            <div class="right-column">
+           
+              <!-- Descrizione -->
+              <div class="product-description">
+                <span>Matite</span>
+                <h1>Blackwing Blue</h1>
+                <p>Matite Blackwing Blue<br>contiene 4 pezzi.</p>
+                <br>
+              </div>
+           
+              <!-- Configurazione -->
+              <div class="product-configuration">
+           
+                <!-- Colore -->
+                <div class="product-color">
+                  <span>Opzione</span>
+           
+                  <div class="color-choose">
+                    <div>
+                      <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                      <label for="red"><span></span></label>
+                    </div>
+                    <div>
+                      <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                      <label for="blue"><span></span></label>
+                    </div>
+                    <div>
+                      <input data-image="black" type="radio" id="black" name="color" value="black">
+                      <label for="black"><span></span></label>
+                    </div>
+                  </div>
+           
+                </div>
+           
+                <!-- Quantità -->
+                <div class="cable-config">
+                  <span>Quantit&agrave;</span>
+           
+                  <div class="cable-choose">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                  </div>
+           
+                  <a href="/contatti.html" style="font-size: 17px; font-family: 'Quicksand';">Contattaci per rispondere alle tue domande!</a>
+                  <br><br>
+                </div>
+              </div>
+           
+                <!-- Prezzo -->
+                <div class="product-price">
+                    <span>€6.00</span>
+                    <a href="#" class="cart-btn">Aggiungi al carrello</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Elena Pirosa<br>Tutti i diritti riservati<br>ACME - Novara (NO)</p>
+        </footer>
+     
+            
+    </body>
+
+</html>
