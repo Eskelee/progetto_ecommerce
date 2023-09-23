@@ -17,9 +17,6 @@
         <!---Titolo della pagina-->
         <title>La Matiteria &#183; Home</title>
         
-        <!--- JavaScript -->
-        <script src="js/scriptindex.js"></script>
-
     </head>
 
     <body>
@@ -53,8 +50,8 @@
                 <div class="col-1">
                     <h2><b>Benvenuto su<br>La Matiteria</b></h2>
                     <br>
-                    <p class="pintro">Da noi troverai articoli di cancelleria<br>di altissima qualità!</p>
-                    <h2 class="pintro2">Sfoglia il nostro catalogo</h2>
+                    <p class="pintro">Trova qualsiasi prodotto<br>di cartoleria di<br>cui hai bisogno!</p>
+                    <h2 class="pintro2">Esplora il nostro catalogo</h2>
                     <a href="catalogo.html"><button type="button" class="esplora bottoneintro">CATALOGO</button></a>
                 </div>
 
@@ -62,18 +59,40 @@
 
                     <div class="vuoto1"></div>
 
-                    <a href="/html/prodotto1.html"><div class="feature-img">
-                        <img src="img/prodotti/1.png" alt="Prodotto 1">
-                    </div></a>
-
-                    <div class="vuoto2"></div>
-
-                    <div class="featuredesc">
-                        <p>Pastelli colorati  <b>Caran d'Ache x Nespresso</b></p>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                          
+                          <a href="html/prodotto1.html"><img src="img/slides/1.png"></a>
+                          <br><br><br>
+                          <div class="text">Caran d'Ache x Nespresso</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          
+                          <a href="html/prodotto4.html"><img src="img/slides/2.png"></a>
+                          <br><br><br>
+                          <div class="text">Blackwing Volumes</div>
+                        </div>
+                       
+                        <div class="mySlides fade">
+                          
+                          <a href="html/prodotto6.html"><img src="img/slides/3.png"></a>
+                          <br><br><br>
+                          <div class="text">Caran d'Ache Fancolor
+                          </div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-    
-                    <h2 class="featuretitle">ULTIMI ARRIVI</h2>
-    
+                    <br>
+                      
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -81,6 +100,8 @@
        <footer>
         <p>La Matiteria di Pirosa Elena<br>Tutti i diritti riservati<br>ACME - Novara (NO)</p>
        </footer>
+
+       <script src="js/scriptindex.js"></script>
             
     </body>
 </html>
